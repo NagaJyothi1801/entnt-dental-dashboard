@@ -1,47 +1,53 @@
 # 🦷 ENTNT Dental Center – React Appointment Dashboard
 
+A modern **React-based admin and patient dashboard** to manage dental appointments, patient records, calendar scheduling, and invoice printing. Built as part of the ENTNT Frontend Developer assignment.
 
-A modern React-based admin and patient dashboard to manage dental appointments, patient records, calendar scheduling, and invoice printing.
+---
+
+## 🔗 Live Demo
+
+🌐 [https://entnt-dental-dashboard-self.vercel.app](https://entnt-dental-dashboard-self.vercel.app)
 
 ---
 
 ## 🔧 Tech Stack
 
 - **Frontend**: React, TailwindCSS, Vite
-- **State Management**: React Context API (Auth)
+- **Routing**: React Router
+- **State Management**: React Context (Auth)
 - **Calendar**: `react-calendar`
-- **Invoice Printing**: `react-to-print`
-- **Toast Notifications**: `react-toastify`
-- **Data Storage**: localStorage (no backend)
+- **Print Support**: `react-to-print`
+- **Notifications**: `react-toastify`
+- **Data Storage**: `localStorage` (no backend)
 
 ---
 
 ## 🚀 Features
 
 ### 👩‍⚕️ Admin Dashboard
-- View total patients, appointments, completed treatments, and revenue
-- Add, edit, or delete patient records
-- Create and manage appointments/incidents
-- Upload files for appointments
-- View appointments in calendar format
+- Dashboard with KPIs: Total Patients, Appointments, Revenue, Completed Treatments
+- Patient Management (Add / Edit / Delete)
+- Appointment Management (Add treatment details, upload files)
+- Calendar View with appointments highlighted
+- Export Patient List to CSV
 
 ### 🧑‍⚕️ Patient Dashboard
+- Login with credentials
 - View their own appointment history
-- Access uploaded files
-- Print invoice with appointment/treatment details
+- Download/Print invoices for treatments (with files)
 
 ---
 
-## 🔑 Default Credentials
+## 🔑 Default Logins
 
-| Role    | Email           | Password    |
-|---------|------------------|-------------|
-| Admin   | `admin@entnt.in` | `admin123`  |
-| Patient | `john@entnt.in`  | `john123`   |
+| Role    | Email           | Password     |
+|---------|------------------|--------------|
+| Admin   | `admin@entnt.in` | `admin123`   |
+| Patient | `john@entnt.in`  | `john123`    |
 
 ---
 
-## 🖥️ How to Run Locally
+## 🖥️ Getting Started (For Local Setup)
 
 ```bash
 git clone https://github.com/NagaJyothi1801/entnt-dental-dashboard.git
