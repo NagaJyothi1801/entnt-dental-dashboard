@@ -1,5 +1,4 @@
 import { forwardRef } from "react";
-import logo from "../assets/logo.png"; // Ensure the path is correct
 
 const InvoiceCard = forwardRef(({ data, patient }, ref) => {
   if (!data || !patient) return null;
@@ -11,7 +10,6 @@ const InvoiceCard = forwardRef(({ data, patient }, ref) => {
     >
       {/* Header */}
       <div className="text-center mb-4">
-        <img src={logo} alt="Clinic Logo" className="h-16 mx-auto mb-2" />
         <h2 className="text-2xl font-bold text-blue-700">ENTNT Dental Center</h2>
         <p className="text-sm text-gray-600 font-medium">🧾 Dental Treatment Invoice</p>
       </div>
