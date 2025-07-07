@@ -1,0 +1,166 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* ---------- Base Styling ---------- */
+:root {
+  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+  color: #1f2937; /* Tailwind gray-800 */
+  background-color: #f9fafb; /* Tailwind gray-50 */
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  margin: 0;
+  display: flex;
+  place-items: center;
+  min-width: 320px;
+  min-height: 100vh;
+  background-color: #f9fafb;
+  color: #1f2937;
+}
+
+h1 {
+  font-size: 3.2em;
+  line-height: 1.1;
+}
+
+a {
+  font-weight: 500;
+  color: #3b82f6; /* Tailwind blue-500 */
+  text-decoration: inherit;
+}
+a:hover {
+  color: #1e40af; /* Tailwind blue-800 */
+}
+
+button {
+  border-radius: 8px;
+  border: 1px solid transparent;
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  background-color: #11cbd8; /* Tailwind gray-100 */
+  cursor: pointer;
+  transition: border-color 0.25s;
+}
+button:hover {
+  border-color: 	#7dd3fc; /* Tailwind blue-500 */
+}
+button:focus,
+button:focus-visible {
+  outline: 4px auto -webkit-focus-ring-color;
+}
+
+/* ---------- react-calendar Custom Styling ---------- */
+.react-calendar {
+  border-radius: 0 0 6px 6px;
+  overflow: hidden;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  width: 100%;
+}
+
+.highlight {
+  background-color: #bbf7d0 !important;
+  border-radius: 6px;
+}
+
+.react-calendar__tile abbr {
+  color: #1e3a8a;
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+.react-calendar__tile--now abbr {
+  color: #16a34a !important;
+  font-weight: 700;
+}
+
+.react-calendar__tile--active abbr {
+  color: #ffffff !important;
+  background-color: #3b82f6 !important;
+  border-radius: 9999px;
+  padding: 0.2rem 0.5rem;
+}
+
+.react-calendar__month-view__days__day--weekend abbr {
+  color: #dc2626;
+}
+
+.react-calendar__navigation {
+  background: linear-gradient(to right, #3b82f6, #9333ea);
+  border-radius: 6px 6px 0 0;
+  padding: 0.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.react-calendar__navigation__label {
+  color: white;
+  font-size: 1.25rem;
+  font-weight: bold;
+  flex-grow: 1;
+  text-align: center;
+}
+
+.react-calendar__navigation__arrow {
+  color: white;
+  font-size: 1.25rem;
+  font-weight: bold;
+  padding: 0 0.5rem;
+  cursor: pointer;
+}
+
+/* ---------- Dark Mode Support (Optional) ---------- */
+@media (prefers-color-scheme: dark) {
+  :root {
+    background-color: #111827; /* Tailwind gray-900 */
+    color: #f3f4f6; /* Tailwind gray-100 */
+  }
+
+  body {
+    background-color: #111827;
+    color: #f3f4f6;
+  }
+
+  .bg-white {
+    background-color: #1f2937 !important;
+  }
+
+  .text-gray-500 {
+    color: #9ca3af !important;
+  }
+
+  button {
+    background-color: #1f2937;
+    color: #f3f4f6;
+  }
+
+  a {
+    color: #60a5fa; /* Tailwind blue-400 */
+  }
+}
+
+/* ---------- Print View ---------- */
+@media print {
+  .no-print {
+    display: none !important;
+  }
+
+  body {
+    background: white;
+    color: black;
+  }
+
+  .react-calendar {
+    box-shadow: none;
+    border: none;
+  }
+}
