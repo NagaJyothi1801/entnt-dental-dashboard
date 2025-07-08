@@ -43,7 +43,7 @@ A modern **React-based admin and patient dashboard** to manage dental appointmen
 | Role    | Email           | Password     |
 |---------|------------------|--------------|
 | Admin   | `admin@entnt.in` | `admin123`   |
-| Patient | `john@entnt.in`  | `john123`    |
+| Patient | `john@entnt.in`  | `patient123`    |
 
 ---
 
