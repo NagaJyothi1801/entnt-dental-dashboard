@@ -1,4 +1,4 @@
-# 🦷 ENTNT Dental Center – React Appointment Dashboard
+# 🦷 Dental Center Dashboard – React Appointment Dashboard
 
 A modern **React-based admin and patient dashboard** to manage dental appointments, patient records, calendar scheduling, and invoice printing. Built as part of the ENTNT Frontend Developer assignment.
 
